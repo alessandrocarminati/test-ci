@@ -4,10 +4,10 @@ jobs:
   aarch64_job:
     # The host should always be Linux
     runs-on: ubuntu-18.04
-    name: Build on ubuntu-18.04 armv7
+    name: Build on Centos stream 9 on aarch64
     steps:
       - uses: actions/checkout@v2.1.0
-      - uses: alessandrocarminati/run-on-arch-action@v2
+      - uses: alessandrocarminati/run-on-arch-action
         name: Run commands
         id: runcmd
         with:
